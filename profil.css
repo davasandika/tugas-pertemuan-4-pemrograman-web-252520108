@@ -1,0 +1,87 @@
+/* Pengaturan Box-Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* kotak utama pada profil (body) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue; 
+    color: #000000; 
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+/* Selector ID (#profil-utama) - Kotak utama berlebar tetap di tengah */
+#profil-utama {
+    width: 400px;
+    margin: 0 auto; /* Menengahkan kotak secara horizontal */
+    padding: 30px;
+    background-color: #ffffff; 
+    border: 2px solid #cbd5e1; 
+    border-radius: 16px;
+}
+
+/* Selector Turunan (Descendant): h1 di dalam .header-profil */
+.header-profil h1 {
+    color: rgb(30, 58, 138); 
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Selector Class (.sub-judul) */
+.sub-judul {
+    text-align: center;
+    font-style: italic;
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+/* Selector Grup (h3 dan p pada bagian tertentu) */
+.konten-bio p, .keahlian-container h3 {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.keahlian-container h3 {
+    color: rgb(15, 23, 42);
+}
+
+/* Ketentuan Display: inline-block pada minimal 2 elemen (badge keahlian) */
+.badge-keahlian {
+    display: inline-block;
+    background-color: #e2e8f0;
+    color: #1e293b;
+    padding: 6px 12px;
+    margin-right: 6px;
+    margin-bottom: 8px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Container Tombol */
+.aksi-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Tombol aksi dengan display: inline-block */
+.tombol-aksi {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: rgb(37, 99, 235); /* Format RGB */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.tombol-aksi:hover {
+    background-color: rgb(29, 78, 216);
+}
